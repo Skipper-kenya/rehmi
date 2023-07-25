@@ -1,12 +1,6 @@
 import React from "react";
 import "./contacts.css";
-import {
-  Envelope,
-  LinkedinLogo,
-  PhoneCall,
-  TwitterLogo,
-  User,
-} from "phosphor-react";
+import { Envelope, PhoneCall, TwitterLogo, User } from "phosphor-react";
 function Contacts() {
   return (
     <div>
@@ -37,16 +31,20 @@ function Contacts() {
               <Envelope size={40} />
             </span>
             <p>Email</p>
-            <a href="mailTo:rehmi6457@gmail.com" target="_blank">
+            <a
+              href="mailTo:rehmi6457@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button>Connect</button>
             </a>
           </div>
           <div className="cont-cards">
             <span>
-              <LinkedinLogo size={40} />
+              <PhoneCall size={40} />
             </span>
-            <p>LinkedIn</p>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <p>PhoneCall</p>
+            <a href="tel:+923024446457" target="_blank">
               <button>Connect</button>
             </a>
           </div>

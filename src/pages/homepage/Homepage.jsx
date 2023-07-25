@@ -11,13 +11,17 @@ import {
   Copyright,
   Question,
   Envelope,
+  PhoneCall,
 } from "phosphor-react";
 import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <div className="homepage">
       <section className="homepageImg">
-        <img src="https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+        <img
+          src="https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt=""
+        />
         <div className="picIntro">
           <h2>We Guarantee Education for a better world.</h2>
           <h3>
@@ -79,13 +83,12 @@ const Homepage = () => {
 
       <section className="footer">
         <div className="home-social">
-          <a href="https://www.twitter.com/" target="_blank">
-            <TwitterLogo size={30} />
+          <a href="tel:+923024446457" rel="noreferrer">
+            <span>
+              <PhoneCall size={30} />
+            </span>
           </a>
-          <a href="https://www.linkedin.com/" target="_blank">
-            <LinkedinLogo size={30} />
-          </a>
-          <a href="mailTo:rehmi6457@gmail.com" target="_blank">
+          <a href="mailTo:rehmi6457@gmail.com" target="_blank" rel="noreferrer">
             <Envelope size={30} />
           </a>
         </div>

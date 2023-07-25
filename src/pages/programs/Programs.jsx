@@ -10,6 +10,21 @@ import {
 } from "phosphor-react";
 
 const Programs = () => {
+  const ChemContents = () => {
+    return (
+      <>
+        <LinkInsert
+          source="./Assets/chapter1.pdf"
+          resourceName=" solved 9th Chemistry class Chapter 1"
+        />
+        <LinkInsert
+          source="./Assets/chapter2.pdf"
+          resourceName="solved 9th Chemistry class Chapter 2"
+        />
+      </>
+    );
+  };
+
   return (
     <div className="programsCont">
       <div className="topProg">
@@ -23,24 +38,20 @@ const Programs = () => {
         </div>
       </div>
       <div className="subjects">
-        <Subject
-          subject="Biology"
-          source="./Assets/add.docx"
-          resourceName="Biology test1"
-        />
-        <Subject subject="Chemistry" />
-        <Subject subject="Physics" />
-        <Subject subject="Mathematics" />
-        <Subject subject="Urdu" />
-        <Subject subject="Park Study" />
-        <Subject subject="Islamyat" />
-        <Subject subject="English" />
+        <TopSubInsert subject="Chemistry" links={ChemContents()} />
+        <TopSubInsert subject="Biology" />
+        <TopSubInsert subject="Physics" />
+        <TopSubInsert subject="Mathematics" />
+        <TopSubInsert subject="Urdu" />
+        <TopSubInsert subject="Park Study" />
+        <TopSubInsert subject="Islamyat" />
+        <TopSubInsert subject="English" />
       </div>
     </div>
   );
 };
 
-const Subject = (props) => {
+const TopSubInsert = (props) => {
   return (
     <div className="subject">
       <div className="subTop">
@@ -50,14 +61,18 @@ const Subject = (props) => {
         </span>
       </div>
       <div className="subBottom">
-        <div className="botLinks">
-          <a href={props.source} download>
-            <span>{props.source ? <FileDoc size={20} /> : null}</span>
-            {props.resourceName}
-          </a>
-        </div>
+        <div className="botLinks">{props.links}</div>
       </div>
     </div>
+  );
+};
+
+const LinkInsert = (props) => {
+  return (
+    <a href={props.source} download>
+      <span>{props.source ? <FileDoc size={20} /> : null}</span>
+      {props.resourceName}
+    </a>
   );
 };
 

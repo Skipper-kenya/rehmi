@@ -181,6 +181,9 @@ h3 {
   letter-spacing: 1px;
 }
 @media only screen and (max-width: 600px) {
+  .alr p {
+    font-size: 15px;
+  }
   .promote {
     display: flex;
     flex-direction: column;
