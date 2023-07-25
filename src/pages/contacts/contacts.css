@@ -1,0 +1,79 @@
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.cont-top {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+}
+.cont-top span {
+  color: orangered;
+}
+.cont-top h3 {
+  letter-spacing: 1px;
+  font-family: serif;
+  font-size: 25px;
+}
+.cont-top p {
+  letter-spacing: 1px;
+  font-family: arial;
+}
+.cont-bottom {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  height: auto;
+  border-bottom: 3px solid orangered;
+  border-radius: 40%;
+}
+
+.cont-cards {
+  width: 25%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cont-cards span {
+  color: blue;
+}
+.cont-cards p {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+}
+.cont-cards a {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.cont-cards a button {
+  padding: 5px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 20%;
+}
+.cont-cards a button:hover {
+  transition: 0.4s;
+  background-color: rgb(66, 63, 83);
+  color: white;
+  cursor: pointer;
+}

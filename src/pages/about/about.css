@@ -1,0 +1,44 @@
+.about-conts {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+}
+.topgear {
+  position: relative;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background-color: blueviolet;
+}
+.card2-about {
+  position: absolute;
+  top: 120px;
+  left: 10%;
+  background-color: rgb(217, 238, 217);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: auto;
+}
+.ca1 h3 {
+  margin-left: 1rem;
+  letter-spacing: 1px;
+  font-family: arial;
+}
+.ca1 p {
+  width: 90%;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.3rem auto;
+}
+.ca1 p span{
+    color: orangered;
+    margin-right: 0.2rem;
+}
